@@ -1,0 +1,222 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    background-image: url("back.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+    /* padding: 20px; */
+}
+
+.header {
+    background-color: #080101;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.logo {
+    margin-left: 10px;
+}
+.logo img {
+    height: 90px;
+    max-width: 100%; 
+}
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 20px;
+    position: relative;
+}
+.navbar a {
+    color: #d0dff1;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    transition: color 0.1s ease;
+}
+.navbar a:hover {
+    color: #09a0f1;
+}
+
+.navbar li::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #09a0f1;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+.navbar li:hover::after {
+    transform: scaleX(1);
+}
+form{
+    margin-right: 10px;
+    display: flex;
+}
+form.search_button input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  form.search_button button {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer;
+  }
+  
+  form.search_button button:hover {
+    background: #0b7dda;
+  }
+  
+
+  form.search_button::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #bebebe;
+    color: white;
+    text-align: center;
+    height: 100vh;
+}
+
+/* .intro {
+    width: 100%;
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #09a0f1;
+    transition: background-color 0.3s, color 0.3s;
+} */
+
+/* .intro:hover {
+    background-color: #09a0f1;
+    color: #fff;
+} */
+
+.slider {
+    width: 50%;
+    height: 500px;
+    position: relative;
+    margin: 50px 400px 0px 400px !important;
+    border-radius: 10%;
+    overflow: hidden;
+    /* background-size: 100% 100%; */
+    box-shadow: 1px 2px 10px 4px #000000;
+  
+  }
+  
+  .slide {
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+
+  @keyframes slideAnimation {
+    0%, 100% {
+      opacity: 0;
+    }
+    10%, 90% {
+      opacity: 1;
+    }
+  }
+  
+  .slide:nth-child(1) {
+    background-image: url(/house_1.webp);
+  }
+  
+  .slide:nth-child(2) {
+    background-image: url(/House_2.webp);
+  }
+  
+  .slide:nth-child(3) {
+    background-image: url(/House_3.webp);
+  }
+  
+
+
+
+.con{
+    margin-left: 500px;
+}
+
+.contact_form{
+
+    overflow: hidden;
+    width: 50%;
+    color: #f1f1f1;
+    background-color: #333;
+}
+.contact_form form{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: 70%;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
+/* Style for the footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

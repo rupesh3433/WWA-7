@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>ACM-W</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="/logo.webp" alt="ACM-W Logo" />
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <form class="search_button" action="">
+                <input type="text" placeholder="Search..." name="Search">
+                <button type="submit"><i class="button">Search</i></button>
+            </form>
+        </header>
+
+        <section id="about" class="section">
+            <div class="slider">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2023 ACM-W. All rights reserved.</p>
+        </footer>
+    </div>
+
+
+    <script>
+        var slides = document.querySelectorAll(".slide");
+        var currentSlide = 0;
+        var slideInterval = setInterval(nextSlide, 3000);
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove("active");
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add("active");
+        }
+    </script>
+</body>
+
+</html>
