@@ -174,15 +174,15 @@ form.search_button input[type=text] {
   }
   
   .slide:nth-child(1) {
-    background-image: url(/house_1.webp);
+    background-image: url(house_1.webp);
   }
   
   .slide:nth-child(2) {
-    background-image: url(/House_2.webp);
+    background-image: url(House_2.webp);
   }
   
   .slide:nth-child(3) {
-    background-image: url(/House_3.webp);
+    background-image: url(House_3.webp);
   }
   
 
